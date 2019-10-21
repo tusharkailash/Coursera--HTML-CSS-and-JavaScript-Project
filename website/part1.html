@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <body>
+      <h1>Please Enter your Details For Our Login Website!</h1>
+      <form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="POST" enctype="multipart/form-data">
+          <fieldset>
+              <legend>Your Face</legend>
+
+              <label for = "avatar"> Your image:</label>
+              <input type = "file" id = "avatar" required><br />
+              <label for: "preview">Image Preview</label>
+              <img id = "preview">
+          </fieldset>
+
+          <fieldset>
+              <legend>Your General Details</legend>
+              <label for = "name"> Name:</label>
+              <input type = "text" id = "name" placeholder = "Your Full Name" required> </br>
+
+              <label for = "gender"> Gender:</label>
+              <input type = "radio" id = "male" name = "gender" value = "male">
+              <label for = "male"> Male</label>
+              <input type = "radio" id = "female" name = "gender" value = "female">
+              <label for = "male"> Female</label> <br />
+
+              <label for = "age"> Age:</label>
+              <input type = "number" id ="age" name ="age"> <br />
+
+              <label for = "dob"> Date of birth:</label>
+              <input type = "date" id = "dob" name = "dob"> <br />
+
+              <label for = "color choice"> Favorite color:</label>
+              <input type = "color" id = "color choice" name = "color choice"> <br />
+
+              <label for = "country"> Which country:</label>
+              <select id = "country" name ="country">
+              <option value = ""></option>
+              <option value = "United States">United States</option>
+              <option value = "India">India</option>
+              <option value = "United Kigndom">United Kigndom</option>
+              <option value = "Australia">Australia</option>
+              <option value = "Japan">Japan</option>
+              </select>
+          </fieldset>
+
+          <fieldset>
+              <legend>Your indicators</legend>
+
+              <label for = "height"></label> Height:</label>
+              Short <input type = "range" id = "height" name ="height" min = 0 max = 100> Tall <br />
+              <label for = "salary">Salary:</label>
+              Poor <input type = "range" id = "salary" name ="salary" min = 0 max = 100> Rich <br />
+          </fieldset>
+
+          <fieldset>
+              <legend>Your Contact Information</legend>
+
+              <label for = "email">Email:</label>
+              <input type = "email" id = "email" name ="email" required> <br />
+              <label for = "mobile">Mobile:</label>
+              <input type = "tel" id = "mobile" name ="mobile"> <br />
+              <label for = "address">Address:</label>
+              <textarea id ="address" name ="address"></textarea> <br />
+              Method to contact you:
+                      <input type ="checkbox" id = "email" name = "email" value = "email">
+                      <label for = "email">Email</label>
+                      <input type ="checkbox" id = "whatsapp" name = "whatsapp" value = "whatsapp">
+                      <label for = "whatsapp">Whatsapp</label>
+                      <input type ="checkbox" id = "inapp" name = "inapp" value = "inapp">
+                      <label for = "inapp">In-app chat</label>
+          </fieldset>
+
+          <input type = "submit">
+
+      </form>
+    </body>
+</html>
